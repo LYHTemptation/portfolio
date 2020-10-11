@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yoonho</title>
     <link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <style>
     .icon {
@@ -14,70 +15,82 @@
   </style>
   <body>
     <!--Navbar-->
-    <nav id="navbar"></nav>
-    <div class="navbar_">
-      <img class="icon" src="imgs/favicon.png" alt="brand logo" />
-      <a href="#">yoonho</a>
-    </div>
-    <ul class="navbar__menu">
-      <li class="navbar__menu__item">Home</li>
-      <li class="navbar__menu__item">About</li>
-      <li class="navbar__menu__item">Skills</li>
-      <li class="navbar__menu__item">My work</li>
-      <li class="navbar__menu__item">Testimonial</li>
-      <li class="navbar__menu__item">Contact</li>
-    </ul>
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <img class="icon" src="imgs/favicon.png" alt="brand logo" />
+        <a class="navbar__a" href="#">Yoonho</a>
+      </div>
+      <div class="navbar__menu">
+        <ul class="navbar__menu">
+          <li class="navbar__menu__item active">Home</li>
+          <li class="navbar__menu__item">About</li>
+          <li class="navbar__menu__item">Skills</li>
+          <li class="navbar__menu__item">My work</li>
+          <li class="navbar__menu__item">Testimonial</li>
+          <li class="navbar__menu__item">Contact</li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Home -->
     <section id="home">
       <img src="imgs/favicon1.png" alt="imgs" class="home__imgs" />
       <h1 class="home__title">Hello,<br />I'm yoonho</h1>
-      <h2 class="home__description">Love and peace</h2>
+      <h2 class="home__description">Love and peace and joy</h2>
       <button class="home__Contact">Contact me</button>
     </section>
     <!-- About -->
-    <section id="about">
+    <section id="about" class="section section__container">
       <h1>About me</h1>
       <p>
         가만히 있는 것을 가장 싫어하는 뜨거운 청춘 좋아하는 것을 하기 위해
         최선을 다하는 편 말을 하기보다 들어주기를 잘하는 편
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis alias vel pariatur tenetur,
+        it delectus quam dolorum temporibus architecto eius quos, 
+        quas adipisci veniam voluptatibus unde ex. Deleniti, nulla quidem!
       </p>
       <div class="about__major">
         <div class="major">
           <div class="major__icon">
-            <img src="imgs/html5.png" alt="html5" />
+            <img src="imgs/html5.png" alt="html5" width="50" height="60"/>
           </div>
-          <div class="major__titile">Html</div>
+          <h2 class="major__titile">Html</h2>
           <div class="major__discription">About Html is MarkUpLanguage</div>
         </div>
         <div class="major">
           <div class="major__icon">
-            <img src="imgs/css3.png" alt="Css3" />
+            <img src="imgs/css3.png" alt="Css3" width="50" height="60"/>
           </div>
-          <div class="major__titile">CSS3</div>
+          <h2 class="major__titile">CSS3</h2>
           <div class="major__discription">create image</div>
         </div>
         <div class="major">
           <div class="major__icon">
-            <img src="imgs/js.png" alt="javaScript" />
+            <img src="imgs/js.png" alt="javaScript" width="50" height="60"/>
           </div>
-          <div class="major__titile">JavaScript</div>
+          <h2 class="major__titile">JavaScript</h2>
           <div class="major__discription">JavaScript make more activete</div>
         </div>
       </div>
       <div class="about__jobs">
         <div class="job">
-          <img src="imgs/school.jpg" alt="konkuk" class="job__logo" />
-          <p class="job__name">Konkun university</p>
-          <p class="job__period">4years</p>
+          <img src="imgs/school.png" alt="konkuk" class="job__logo" width="60" height="60"/>
+          <div class="job__discription">
+            <p class="job__name">I am going to Konkun university and my major is Computer Engineering</p>
+            <p class="job__period">for 4years</p>
+          </div>
         </div>
         <div class="job">
-          <img src="imgs/company.jpg" alt="company" class="job__logo2" />
-          <p class="job__name">I want to go there</p>
-          <p class="job__period">someday</p>
+          <img src="imgs/company.png" alt="company" class="job__logo2" width="60" height="60" />
+          <div class="job__discription">
+            <p class="job__name">I want to go there. This company fits my hobby</p>
+            <p class="job__period">someday</p>
+          </div>
         </div>
       </div>
     </section>
     <!-- Skills -->
-    <section id="skills">
+    <section id="skills" class="section">
+      <div class="section__container">
       <h1>Skills</h1>
       <h2>skills & Attributes</h2>
       <p>
@@ -94,20 +107,26 @@
               <span>HTML</span>
               <span>99%</span>
             </div>
-            <div class="skill__bar"></div>
-            <div class="skill__value"></div>
+            <div class="skill__bar">
+              <div class="skill__value">
+              </div>
+            </div>
             <div class="skill_description">
               <span>CSS</span>
               <span>30%</span>
             </div>
-            <div class="skill__bar"></div>
-            <div class="skill__value"></div>
-            <div class="skill_description">
+            <div class="skill__bar">
+              <div class="skill__value">
+              </div>
+              </div>
+              <div class="skill_description">
               <span>JavaScript</span>
               <span>10%</span>
             </div>
-            <div class="skill__bar"></div>
-            <div class="skill__value"></div>
+            <div class="skill__bar">
+              <div class="skill__value">
+            </div>
+          </div>
           </div>
         </div>
         <div class="skillset__right">
@@ -130,9 +149,10 @@
           </div>
         </div>
       </div>
+    </div>
     </section>
     <!-- Work -->
-    <section id="work">
+    <section id="work" class="section">
       <h1>MY work</h1>
       <h3>Projects</h3>
       <div class="work_categories">
@@ -197,7 +217,7 @@
       </div>
     </section>
     <!-- Testimonials -->
-    <section id="testimonials">
+    <section id="testimonials" class="section">
       <h1>Testimonial</h1>
       <h2>see what they say about me</h2>
       <div class="testimoinals">
@@ -224,7 +244,7 @@
       </div>
     </section>
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="section">
       <h1 class="contact__title">Let's talk</h1>
       <h2 class="contact__email">ttl8823@gmail.com</h2>
       <div class="contact__links">
