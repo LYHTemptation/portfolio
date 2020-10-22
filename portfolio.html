@@ -6,6 +6,8 @@
     <title>Yoonho</title>
     <link rel="icon" type="image/png" href="imgs/favicon.png" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <script type="text/javaScript" defer src="main.js"></script>
   </head>
   <style>
     .icon {
@@ -29,6 +31,10 @@
           <li class="navbar__menu__item">Testimonial</li>
           <li class="navbar__menu__item">Contact</li>
         </ul>
+      </div>
+      <!-- Toggle button -->
+      <div class="button navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
       </div>
     </nav>
     <!-- Home -->
@@ -72,19 +78,19 @@
         </div>
       </div>
       <div class="about__jobs">
-        <div class="job">
+        <div class="job1">
           <img src="imgs/school.png" alt="konkuk" class="job__logo" width="60" height="60"/>
           <div class="job__discription">
             <p class="job__name">I am going to Konkun university and my major is Computer Engineering</p>
             <p class="job__period">for 4years</p>
           </div>
         </div>
-        <div class="job">
-          <img src="imgs/company.png" alt="company" class="job__logo2" width="60" height="60" />
+        <div class="job2">
           <div class="job__discription">
             <p class="job__name">I want to go there. This company fits my hobby</p>
             <p class="job__period">someday</p>
           </div>
+          <img src="imgs/company.png" alt="company" class="job__logo2" width="60" height="60" />
         </div>
       </div>
     </section>
@@ -182,6 +188,17 @@
           </div>
         </a>
         <a
+        href="https://github.com/LYHTemptation/mypractice/tree/main/Nomad"
+        class="project"
+        target="blank"
+      >
+        <img src="imgs/projects/3.png" alt="ToDoList" class="project__img"/>
+        <div class="project__description">
+          <h3>ToDoList</h3>
+          <span>Clone coding with Html and css</span>
+        </div>
+      </a>
+        <a
           href="https://github.com/LYHTemptation/mypractice/tree/main/login"
           class="project"
           target="blank"
@@ -189,17 +206,6 @@
           <img src="imgs/projects/2.png" alt="login" class="project__img"/>
           <div class="project__description">
             <h3>Login</h3>
-            <span>Clone coding with Html and css</span>
-          </div>
-        </a>
-        <a
-          href="https://github.com/LYHTemptation/mypractice/tree/main/Nomad"
-          class="project"
-          target="blank"
-        >
-          <img src="imgs/projects/3.png" alt="ToDoList" class="project__img"/>
-          <div class="project__description">
-            <h3>ToDoList</h3>
             <span>Clone coding with Html and css</span>
           </div>
         </a>
@@ -218,28 +224,34 @@
     </section>
     <!-- Testimonials -->
     <section id="testimonials" class="section">
-      <h1>Testimonial</h1>
-      <h2>see what they say about me</h2>
-      <div class="testimoinals">
-        <div class="testimoinal">
-          <img src="imgs/person1.png" alt="person1" />
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita,
-            quod. Assumenda itaque ad at ipsa ea minus est dolore, sunt
-            cupiditate. Sequi, delectus cupiditate. Quaerat provident
-            dignissimos numquam nulla id?
-          </p>
-          <p class="name"><a href="">Yoonho1 / Samsung</a></p>
-        </div>
-        <div class="testimoinal">
-          <img src="imgs/person2.png" alt="person2" />
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita,
-            quod. Assumenda itaque ad at ipsa ea minus est dolore, sunt
-            cupiditate. Sequi, delectus cupiditate. Quaerat provident
-            dignissimos numquam nulla id?
-          </p>
-          <p class="name"><a href="">Yoonho2 / LG</a></p>
+      <div class="section__container">
+        <h1>Testimonial</h1>
+        <h2>see what they say about me</h2>
+        <div class="testimonials">
+          <div class="testimonial">
+            <img src="imgs/person1.png" alt="person1" class="testimonial__avartar"/>
+            <div class="testimonial__textBox">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita,
+              quod. Assumenda itaque ad at ipsa ea minus est dolore, sunt
+              cupiditate. Sequi, delectus cupiditate. Quaerat provident
+              dignissimos numquam nulla id?
+            </p>
+            <p class="name"><a href="">Yoonho1 / Samsung</a></p>
+          </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__textBox">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita,
+              quod. Assumenda itaque ad at ipsa ea minus est dolore, sunt
+              cupiditate. Sequi, delectus cupiditate. Quaerat provident
+              dignissimos numquam nulla id?
+            </p>
+            <p class="name"><a href="">Yoonho2 / LG</a></p>
+          </div>
+          <img src="imgs/person2.png" alt="person2" class="testimonial__avartar"/>
+          </div>
         </div>
       </div>
     </section>
@@ -249,7 +261,7 @@
       <h2 class="contact__email">ttl8823@gmail.com</h2>
       <div class="contact__links">
         <a href="https://github.com/LYHTemptation" target="_blank">
-          <img src="imgs/favicon.png" alt="clickLogo"
+          <img src="imgs/favicon.png" alt="clickLogo" class="contact__img"
         </a>
       </div>
       <p class="contact__rights">2020 made</p>
