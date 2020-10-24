@@ -19,9 +19,19 @@ navbarMenu.addEventListener('click',(event)=>{
     if (link == null){
         return;
     }else{
+    navbarMenu.classList.remove('open');
     scrollInterview(link);
     }
 });
+// Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click',()=>{
+    navbarMenu.classList.add('open');
+    navbarToggleBtn.addEventListener('click',()=>{
+        navbarMenu.classList.remove('open');
+    });
+});
+
 // Handle click contact me
 const contactMe = document.querySelector('.home__Contact');
 contactMe.addEventListener('click',()=>{
@@ -59,12 +69,21 @@ workBtnContainer.addEventListener('click',(e)=>{
     if(filter == null){
         return;
     }
-        projects.forEach((project) =>{
-        console.log(project.dataset.type);
-        if(filter ==='*' || filter === project.dataset.type){
-            project.classList.remove('invisible');
-        }else{
-            project.classList.add('invisible');
-        }
-    });
+    // Remove selection from the previous item and select the new one
+        const active = document.querySelector('.category__btn.selected');
+        active.classList.remove('selected');
+        const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+        target.classList.add('selected');
+        projectContainer.classList.add('anim-out');
+        setTimeout(()=>{
+          projects.forEach((project) =>{
+            console.log(project.dataset.type);
+            if(filter ==='*' || filter === project.dataset.type){
+                project.classList.remove('invisible');
+            }else{
+                project.classList.add('invisible');
+            }
+        });
+        projectContainer.classList.remove('anim-out');
+    }, 300);
 });

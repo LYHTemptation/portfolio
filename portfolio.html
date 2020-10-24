@@ -22,7 +22,6 @@
         <img class="icon" src="imgs/favicon.png" alt="brand logo" />
         <a class="navbar__a" href="#">Yoonho</a>
       </div>
-      <div class="navbar__menu">
         <ul class="navbar__menu">
           <li class="navbar__menu__item active" data-link="#home">Home</li>
           <li class="navbar__menu__item" data-link="#about">About</li>
@@ -31,11 +30,10 @@
           <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li>
           <li class="navbar__menu__item" data-link="#contact">Contact</li>
         </ul>
-      </div>
       <!-- Toggle button -->
-      <div class="button navbar__toggle-btn">
+      <button class="navbar__toggle-btn">
         <i class="fas fa-bars"></i>
-      </div>
+      </button>
     </nav>
     <!-- Home -->
     <section id="home">
@@ -164,7 +162,7 @@
       <h1>MY work</h1>
       <h3>Projects</h3>
       <div class="work_categories">
-        <button class="category__btn active" data-filter="*">
+        <button class="category__btn selected" data-filter="*">
           All <span class="category__count">4</span>
         </button>
         <button class="category__btn" data-filter="html">
